@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shahaashay21/FoodFire-React.git"
+    "url": "git+https://github.com/shahaashay21/React-boilerplate.git"
   },
   "keywords": [
     "Online",
@@ -20,15 +20,14 @@
   "author": "Aashay Shah",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shahaashay21/FoodFire-React/issues"
+    "url": "https://github.com/shahaashay21/React-boilerplate/issues"
   },
-  "homepage": "https://github.com/shahaashay21/FoodFire-React#readme",
+  "homepage": "https://github.com/shahaashay21/React-boilerplate#readme",
   "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.5",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
     "css-loader": "^1.0.0",
     "html-webpack-plugin": "^3.2.0",
     "style-loader": "^0.23.0",
