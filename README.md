@@ -1,4 +1,4 @@
-# ReactStarter
+# ReactBoilerplate
 
 ### Getting Started
 
