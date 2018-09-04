@@ -1,30 +1,48 @@
 {
-  "name": "react-starter",
+  "name": "react-boilerplate",
   "version": "1.0.0",
-  "description": "Simple starter package for Redux with React and Babel support",
+  "description": "React boilerplate with webpack, babel, redux, bootstrap, jQuery, Popper",
   "main": "index.js",
-  "repository": "git@github.com:shahaashay21/ReactStarter.git",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahaashay21/FoodFire-React.git"
+  },
+  "keywords": [
+    "Online",
+    "food",
+    "order"
+  ],
+  "author": "Aashay Shah",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shahaashay21/FoodFire-React/issues"
+  },
+  "homepage": "https://github.com/shahaashay21/FoodFire-React#readme",
   "devDependencies": {
-    "babel-core": "^6.2.1",
-    "babel-loader": "^6.2.0",
-    "babel-preset-es2015": "^6.1.18",
-    "babel-preset-react": "^6.1.18",
-    "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.0"
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7"
   },
   "dependencies": {
-    "babel-preset-stage-1": "^6.1.18",
-    "lodash": "^3.10.1",
-    "react": "16.3.2",
-    "react-dom": "16.3.2",
-    "react-redux": "5.0.7",
-    "redux": "4.0.0"
+    "bootstrap": "^4.1.3",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.4",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
   }
 }
