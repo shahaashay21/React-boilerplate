@@ -6,26 +6,32 @@ const htmlWebpackPlugin = new HtmlWebPackPlugin({
 });
 
 module.exports = {
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader"
-        }
-      },
-      {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"]
-      },
-      {
-        test: /\.(png|svg|jpg|gif)$/,
-         use: [
-           'file-loader'
-         ]
-      }
-    ]
-  },
-  plugins: [htmlWebpackPlugin]
+    output: {
+        publicPath: '/'
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: "babel-loader"
+                }
+            },
+            {
+                test: /\.css$/,
+                use: ["style-loader", "css-loader"]
+            },
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                    'file-loader'
+                ]
+            }
+        ]
+    },
+    devServer: {
+        historyApiFallback: true,
+    },
+    plugins: [htmlWebpackPlugin]
 };
